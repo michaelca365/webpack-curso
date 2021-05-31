@@ -1,7 +1,7 @@
-import sum from './utils/sum';
+import Template from './templates/Template.js';
+console.log('hola');
 
-const hello = "World"
-
-
-console.log(sum(2,2));
-console.log(hello);
+(async function App() {
+  const main = null || document.getElementById('main');
+  main.innerHTML = await Template();
+})();
